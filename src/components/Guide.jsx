@@ -24,7 +24,7 @@ function Guide(props) {
             </div>
             <div className="flex flex-col ml-5 w-6/12 max-lg:ml-0 max-lg:w-full">
                <div className="flex flex-col self-stretch my-auto font-semibold capitalize text-slate-900 max-lg:mt-10 max-lg:max-w-full">
-                  <div className="text-5xl leading-[72px] max-lg:max-w-full max-lg:text-4xl max-lg:leading-[67px]">
+                  <div className="lg:text-4xl lg:leading-[52px] max-lg:max-w-full text-3xl leading-[50px]">
                      Guiding your business towards triumph, one app at a time.
                   </div>
                   <div className="flex gap-5 justify-between pr-20 mt-7 text-lg leading-6 whitespace-nowrap max-lg:flex-wrap max-lg:pr-5 max-lg:max-w-full">

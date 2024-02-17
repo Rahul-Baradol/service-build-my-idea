@@ -52,7 +52,7 @@ function Home(props) {
                   </div>
                   <div className="flex flex-col ml-5 w-[39%] max-lg:ml-0 max-lg:w-full">
                      <div className="flex flex-col max-lg:mt-7">
-                        <div className="justify-center px-11 py-6 text-lg leading-7 text-center text-white capitalize border border-white border-solid bg-zinc-300 bg-opacity-0 rounded-[47px] max-lg:px-5">
+                        <div className="justify-center px-11 py-6 text-sm lg:text-lg leading-7 text-center text-white capitalize border border-white border-solid bg-zinc-300 bg-opacity-0 rounded-[47px] max-lg:px-5">
                            Let's turn your ideas into the next big app success story.
                         </div>{" "}
                         <div className="flex gap-2.5 self-end mt-5 w-[89px]">
