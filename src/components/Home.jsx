@@ -1,5 +1,10 @@
 import * as React from "react";
 import { useState } from "react";
+import leftphone from '../assets/leftphone.svg'
+import centerphone from '../assets/centerphone.svg'
+import rightphone from '../assets/rightphone.svg'
+import left from '../assets/left.svg'
+import right from '../assets/right.svg'
 import '../App.css'
 
 function Home(props) {
@@ -7,9 +12,9 @@ function Home(props) {
    const maxPage = 3;
 
    const [pagesClassnames, setPagesClassnames] = useState([
-      ["phone1", "phone2", "phone3"],
-      ["phone3", "phone2", "phone1"],
-      ["phone2", "phone2", "phone2"],
+      [leftphone, centerphone, rightphone],
+      [rightphone, centerphone, leftphone],
+      [centerphone, centerphone, centerphone],
    ])
 
    return (
@@ -56,19 +61,10 @@ function Home(props) {
                                  return ((ele - 1) + maxPage) % maxPage
                               })
                            }}>
-                              <svg
-                                 xmlns="http://www.w3.org/2000/svg"
-                                 width="24"
-                                 height="24"
-                                 viewBox="0 0 24 24"
-                                 fill="none"
-                                 stroke="currentColor"
-                                 strokeWidth="2"
-                                 strokeLinecap="round"
-                                 strokeLinejoin="round"
-                              >
-                                 <path d="M19 12H5M12 5L5 12l7 7" stroke="#fff" />
-                              </svg>
+                              <img 
+                                 loading="lazy"
+                                 src={left}
+                              />
                            </button>
 
                            {" "}
@@ -78,19 +74,10 @@ function Home(props) {
                                  return (ele + 1) % maxPage;
                               })
                            }}>
-                              <svg
-                                 xmlns="http://www.w3.org/2000/svg"
-                                 width="24"
-                                 height="24"
-                                 viewBox="0 0 24 24"
-                                 fill="none"
-                                 stroke="currentColor"
-                                 strokeWidth="2"
-                                 strokeLinecap="round"
-                                 strokeLinejoin="round"
-                              >
-                                 <path d="M5 12h14M12 5l7 7-7 7" stroke="#fff" />
-                              </svg>
+                              <img 
+                                 loading="lazy"
+                                 src={right}
+                              />
                            </button>
                         </div>
                      </div>
@@ -101,7 +88,7 @@ function Home(props) {
                <div className="flex flex-col gap-5 md:flex-row">
                   {
                      pagesClassnames ? pagesClassnames[page].map((value, index) => {
-                        return <div key={index} className={`${value} aspect-square flex flex-col w-[33%] max-lg:ml-0 max-lg:w-full`}></div>      
+                        return <img key={index} src={value} className={`aspect-square flex flex-col w-[33%] max-lg:ml-0 max-md:w-full`} /> 
                      }) : <></>
                   }
                </div>

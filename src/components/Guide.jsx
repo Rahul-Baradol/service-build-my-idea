@@ -8,8 +8,8 @@ function Guide(props) {
    
    const tabInfo = [
       ["Our mission is to empower through innovation, turning app ideas into impactful solutions that drive success."],
-      ["Our Vision is being determined...."],
-      ["Our value is increasing..."]
+      ["Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab velit architecto totam molestias cumque iusto nisi."],
+      ["Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita quia unde, dolore harum itaque optio ducimus ullam. Nemo, debitis enim."]
    ]
 
    return (
