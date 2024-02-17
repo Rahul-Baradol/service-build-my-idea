@@ -1,6 +1,7 @@
 import * as React from "react";
 import tablepeople from '../assets/tablepeople.svg'
 import { useState } from "react";
+import '../App.css'
 
 function Guide(props) {
    const [tab, setTab] = useState(0);
@@ -12,21 +13,21 @@ function Guide(props) {
    ]
 
    return (
-      <div className="px-16 py-12 bg-white max-md:px-5">
-         <div className="flex gap-5 max-md:flex-col max-md:gap-0 max-md:">
-            <div className="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
+      <div className="px-16 py-12 bg-white max-lg:px-5">
+         <div className="flex gap-5 max-lg:flex-col max-lg:gap-0 max-lg:">
+            <div className="flex flex-col w-6/12 max-lg:ml-0 max-lg:w-full">
                <img
                   loading="lazy"
                   src={tablepeople}
-                  className="mt-4 w-full aspect-[1.25] max-md:mt-10 max-md:max-w-full"
+                  className="mt-4 w-full aspect-[1.25] max-lg:mt-10 max-lg:max-w-full"
                />
             </div>
-            <div className="flex flex-col ml-5 w-6/12 max-md:ml-0 max-md:w-full">
-               <div className="flex flex-col self-stretch my-auto font-semibold capitalize text-slate-900 max-md:mt-10 max-md:max-w-full">
-                  <div className="text-5xl leading-[72px] max-md:max-w-full max-md:text-4xl max-md:leading-[67px]">
+            <div className="flex flex-col ml-5 w-6/12 max-lg:ml-0 max-lg:w-full">
+               <div className="flex flex-col self-stretch my-auto font-semibold capitalize text-slate-900 max-lg:mt-10 max-lg:max-w-full">
+                  <div className="text-5xl leading-[72px] max-lg:max-w-full max-lg:text-4xl max-lg:leading-[67px]">
                      Guiding your business towards triumph, one app at a time.
                   </div>
-                  <div className="flex gap-5 justify-between pr-20 mt-7 text-lg leading-6 whitespace-nowrap max-md:flex-wrap max-md:pr-5 max-md:max-w-full">
+                  <div className="flex gap-5 justify-between pr-20 mt-7 text-lg leading-6 whitespace-nowrap max-lg:flex-wrap max-lg:pr-5 max-lg:max-w-full">
                      <button onClick={() => {
                         setTab(0)
                      }} className={`grow justify-center p-2.5 rounded-2xl ${tab === 0 ? "text-white bg-slate-900" : ""}`}>
@@ -44,7 +45,7 @@ function Guide(props) {
                      </button>
                   </div>
 
-                  <div className="mt-7 text-lg leading-7 text-black max-md:max-w-full">
+                  <div className="mt-7 text-lg leading-7 text-black max-lg:max-w-full">
                      {
                         `${tabInfo[tab]}`
                      }

@@ -1,6 +1,6 @@
 import * as React from "react";
-import '../componentStyles/Home.css'
 import { useState } from "react";
+import '../App.css'
 
 function Home(props) {
    const [page, setPage] = useState(0);
@@ -15,8 +15,8 @@ function Home(props) {
    return (
       <>
          <div className="main bg-center sm:bg-right-top flex overflow-hidden relative flex-col justify-center text-white capitalize min-h-[769px]">
-            <div className="p-12 flex relative flex-col items-start w-full max-md:max-w-full">
-               <div className="mt-14 text-7xl leading-[105px] w-[678px] max-md:mt-10 max-md:max-w-full max-md:text-4xl ">
+            <div className="p-12 flex relative flex-col items-start w-full max-lg:max-w-full">
+               <div className="mt-14 text-7xl leading-[105px] w-[678px] max-lg:mt-10 max-lg:max-w-full max-lg:text-4xl ">
                   <span className="font-semibold text-white capitalize">
                      Fostering Innovation for{" "}
                   </span>
@@ -24,30 +24,30 @@ function Home(props) {
                      Your App Ideas
                   </span>
                </div>
-               <div className="mt-5 text-lg leading-7 w-[556px] max-md:max-w-full">
+               <div className="mt-5 text-lg leading-7 w-[556px] max-lg:max-w-full">
                   Turning your app ideas into reality. Our team crafts tailored
                   solutions using cutting-edge tech. Let's make your vision a reality,
                   one app at a time.
                </div>{" "}
                <button onClick={() => {
                   // click here for appoint
-               }} className="justify-center px-5 py-4 mt-7 mb-24 text-xl leading-7 whitespace-nowrap bg-emerald-300 rounded-xl text-slate-900 max-md:mb-10">
+               }} className="justify-center px-5 py-4 mt-7 mb-24 text-xl leading-7 whitespace-nowrap bg-emerald-300 rounded-xl text-slate-900 max-lg:mb-10">
                   Appointment
                </button>
             </div>
          </div>
 
-         <div className="flex flex-col p-12 bg-slate-900 max-md:px-5">
-            <div className="mt-6 max-md:max-w-full">
-               <div className="flex gap-5 max-md:flex-col max-md:gap-0 max-md:">
-                  <div className="flex flex-col w-[61%] max-md:ml-0 max-md:w-full">
-                     <div className="text-5xl font-semibold text-white capitalize leading-[72px] max-md:mt-10 max-md:max-w-full max-md:text-4xl max-md:leading-[67px]">
+         <div className="flex flex-col p-12 bg-slate-900 max-lg:px-5">
+            <div className="mt-6 max-lg:max-w-full">
+               <div className="flex gap-5 max-lg:flex-col max-lg:gap-0 max-lg:">
+                  <div className="flex flex-col w-[61%] max-lg:ml-0 max-lg:w-full">
+                     <div className="text-5xl font-semibold text-white capitalize leading-[72px] max-lg:mt-10 max-lg:max-w-full max-lg:text-4xl max-lg:leading-[67px]">
                         Bringing your app concepts to life, driven by your imagination.
                      </div>
                   </div>
-                  <div className="flex flex-col ml-5 w-[39%] max-md:ml-0 max-md:w-full">
-                     <div className="flex flex-col mt-8 max-md:mt-10">
-                        <div className="justify-center px-11 py-6 text-lg leading-7 text-center text-white capitalize border border-white border-solid bg-zinc-300 bg-opacity-0 rounded-[47px] max-md:px-5">
+                  <div className="flex flex-col ml-5 w-[39%] max-lg:ml-0 max-lg:w-full">
+                     <div className="flex flex-col mt-8 max-lg:mt-10">
+                        <div className="justify-center px-11 py-6 text-lg leading-7 text-center text-white capitalize border border-white border-solid bg-zinc-300 bg-opacity-0 rounded-[47px] max-lg:px-5">
                            Let's turn your ideas into the next big app success story.
                         </div>{" "}
                         <div className="flex gap-2.5 self-end mt-5 w-[89px]">
@@ -97,11 +97,11 @@ function Home(props) {
                   </div>
                </div>
             </div>{" "}
-            <div className="mt-16 max-md:pr-5 max-md:mt-10 max-md:max-w-full">
+            <div className="mt-16 max-lg:pr-5 max-lg:mt-10 max-lg:max-w-full">
                <div className="flex flex-col gap-5 md:flex-row">
                   {
                      pagesClassnames ? pagesClassnames[page].map((value, index) => {
-                        return <div key={index} className={`${value} aspect-square flex flex-col w-[33%] max-md:ml-0 max-md:w-full`}></div>      
+                        return <div key={index} className={`${value} aspect-square flex flex-col w-[33%] max-lg:ml-0 max-lg:w-full`}></div>      
                      }) : <></>
                   }
                </div>

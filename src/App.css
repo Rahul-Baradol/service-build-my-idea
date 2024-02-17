@@ -1,0 +1,23 @@
+.main {
+   background: url('./assets/home.svg') no-repeat;
+   background-size: cover;
+}
+
+.phone1 {
+   background: url('./assets/leftphone.svg') no-repeat;
+   background-size: cover;
+}
+
+.phone2 {
+   background: url('./assets/centerphone.svg') no-repeat;
+   background-size: cover;
+}
+
+.phone3 {
+   background: url('./assets/rightphone.svg') no-repeat;
+   background-size: cover;
+}
+
+.card {
+   background: linear-gradient(150deg, #12182b, #262c3d, #12182b 100%);
+}
