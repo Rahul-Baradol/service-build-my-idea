@@ -19,7 +19,7 @@ function Home(props) {
 
    return (
       <>
-         <div className="main bg-center sm:bg-right-top flex overflow-hidden relative flex-col justify-start text-white capitalize min-h-[769px]">
+         <div className="main bg-[-38rem_0rem] sm:bg-right-top flex overflow-hidden relative flex-col justify-start text-white capitalize min-h-[769px]">
             <div className="px-12 flex relative top-20 flex-col items-start w-full max-lg:max-w-full">
                <div className="text-7xl leading-[105px] w-[678px] max-lg:mt-10 max-lg:max-w-full max-lg:text-4xl ">
                   <span className="font-semibold text-white capitalize">
