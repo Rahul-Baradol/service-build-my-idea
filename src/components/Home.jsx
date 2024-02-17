@@ -8,14 +8,7 @@ import right from '../assets/right.svg'
 import '../App.css'
 
 function Home(props) {
-   const [page, setPage] = useState(0);
-   const maxPage = 3;
-
-   const [pagesClassnames, setPagesClassnames] = useState([
-      [leftphone, centerphone, rightphone],
-      [rightphone, centerphone, leftphone],
-      [centerphone, centerphone, centerphone],
-   ])
+   const [pagesClassnames, setPagesClassnames] = useState([leftphone, centerphone, rightphone, leftphone, centerphone, rightphone, leftphone, centerphone, rightphone])
 
    return (
       <>
@@ -54,41 +47,16 @@ function Home(props) {
                      <div className="flex flex-col max-lg:mt-7">
                         <div className="justify-center px-11 py-6 text-sm lg:text-lg leading-7 text-center text-white capitalize border border-white border-solid bg-zinc-300 bg-opacity-0 rounded-[47px] max-lg:px-5">
                            Let's turn your ideas into the next big app success story.
-                        </div>{" "}
-                        <div className="flex gap-2.5 self-end mt-5 w-[89px]">
-                           <button onClick={() => {
-                              setPage(ele => {
-                                 return ((ele - 1) + maxPage) % maxPage
-                              })
-                           }}>
-                              <img 
-                                 loading="lazy"
-                                 src={left}
-                              />
-                           </button>
-
-                           {" "}
-
-                           <button onClick={() => {
-                              setPage(ele => {
-                                 return (ele + 1) % maxPage;
-                              })
-                           }}>
-                              <img 
-                                 loading="lazy"
-                                 src={right}
-                              />
-                           </button>
                         </div>
                      </div>
                   </div>
                </div>
             </div>{" "}
-            <div className="mt-16 max-lg:pr-5 max-lg:mt-10 max-lg:max-w-full">
-               <div className="flex flex-col gap-5 md:flex-row">
+            <div className="mt-16 max-lg:mt-10 max-lg:max-w-full">
+               <div className="carousel carousel-center gap-5">
                   {
-                     pagesClassnames ? pagesClassnames[page].map((value, index) => {
-                        return <img key={index} src={value} className={`aspect-square flex flex-col w-[33%] max-lg:ml-0 max-md:w-full`} /> 
+                     pagesClassnames ? pagesClassnames.map((value, index) => {
+                        return <img key={index} src={value} className={`carousel-item aspect-square flex flex-col w-[33%] max-lg:ml-0 max-md:w-full`} />    
                      }) : <></>
                   }
                </div>
