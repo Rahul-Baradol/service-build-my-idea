@@ -35,6 +35,7 @@ function Navbar() {
                <img
                   loading="lazy"
                   src={menuIcon}
+                  className="aspect-square w-6"
                />
             </button> :
 
@@ -44,9 +45,10 @@ function Navbar() {
                   <img
                      loading="lazy"
                      src={closeIcon}
+                     className="aspect-square w-6"
                   />
 
-                  <div className="absolute text-white bg-slate-900 flex flex-col gap-5 pb-5 px-5 top-24 right-0 w-[100vw] h-fit z-10">
+                  <div className="absolute text-white bg-slate-900 flex flex-col gap-5 pb-5 px-5 top-20 right-0 w-[100vw] h-fit z-10">
                      <button className="border-emerald-300 border-[0.2px] text-sm rounded-xl py-2">Home</button>
                      <button className="border-emerald-300 border-[0.2px] text-sm rounded-xl py-2">Services </button>
                      <button className="border-emerald-300 border-[0.2px] text-sm rounded-xl py-2">About us</button>
