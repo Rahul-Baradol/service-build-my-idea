@@ -15,8 +15,8 @@ function Services(props) {
         seamless experiences, ensuring every idea finds its perfect form.
       </div>
       <div className="mt-12 max-lg:mt-10 max-lg:max-w-full flex flex-col gap-0 md:gap-10">
-        <div className="flex gap-5 max-lg:flex-col max-lg:gap-0 max-lg:">
-          <div className="flex flex-col w-[33%] max-lg:ml-0 max-lg:w-full px-5">
+        <div className="flex gap-5 max-lg:flex-col max-lg:gap-0 lg:px-8 max-lg:">
+          <div className="flex flex-col w-[33%] max-lg:ml-0 max-lg:w-full px-5 ">
             <div className="card flex flex-col items-center px-8 py-12 w-full capitalize rounded-[55px] max-lg:px-5 max-lg:mt-10">
               <img
                 loading="lazy"
@@ -66,7 +66,7 @@ function Services(props) {
           </div>
         </div>
 
-        <div className="flex gap-5 max-lg:flex-col max-lg:gap-0 max-lg:">
+        <div className="flex gap-5 max-lg:flex-col max-lg:gap-0 lg:px-8 max-lg:">
           <div className="flex flex-col w-[33%] max-lg:ml-0 max-lg:w-full px-5">
             <div className="card flex flex-col items-center px-8 py-12 w-full capitalize rounded-[55px] max-lg:px-5 max-lg:mt-10">
               <img
