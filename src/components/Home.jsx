@@ -19,9 +19,9 @@ function Home(props) {
 
    return (
       <>
-         <div className="main bg-center sm:bg-right-top flex overflow-hidden relative flex-col justify-center text-white capitalize min-h-[769px]">
-            <div className="p-12 flex relative flex-col items-start w-full max-lg:max-w-full">
-               <div className="mt-14 text-7xl leading-[105px] w-[678px] max-lg:mt-10 max-lg:max-w-full max-lg:text-4xl ">
+         <div className="main bg-center sm:bg-right-top flex overflow-hidden relative flex-col justify-start text-white capitalize min-h-[769px]">
+            <div className="px-12 flex relative top-20 flex-col items-start w-full max-lg:max-w-full">
+               <div className="text-7xl leading-[105px] w-[678px] max-lg:mt-10 max-lg:max-w-full max-lg:text-4xl ">
                   <span className="font-semibold text-white capitalize">
                      Fostering Innovation for{" "}
                   </span>
@@ -36,7 +36,7 @@ function Home(props) {
                </div>{" "}
                <button onClick={() => {
                   // click here for appoint
-               }} className="justify-center px-5 py-4 mt-7 mb-24 text-xl leading-7 whitespace-nowrap bg-emerald-300 rounded-xl text-slate-900 max-lg:mb-10">
+               }} className="justify-center px-4 py-3 mt-7 mb-24 text-md leading-7 whitespace-nowrap bg-emerald-300 rounded-xl text-slate-900 max-lg:mb-10">
                   Appointment
                </button>
             </div>
@@ -46,12 +46,12 @@ function Home(props) {
             <div className="mt-6 max-lg:max-w-full">
                <div className="flex gap-5 max-lg:flex-col max-lg:gap-0 max-lg:">
                   <div className="flex flex-col w-[61%] max-lg:ml-0 max-lg:w-full">
-                     <div className="text-5xl font-semibold text-white capitalize leading-[72px] max-lg:mt-10 max-lg:max-w-full max-lg:text-4xl max-lg:leading-[67px]">
+                     <div className="text-4xl font-semibold text-white capitalize leading-[50px] max-lg:max-w-full max-lg:text-4xl max-lg:leading-[45px]">
                         Bringing your app concepts to life, driven by your imagination.
                      </div>
                   </div>
                   <div className="flex flex-col ml-5 w-[39%] max-lg:ml-0 max-lg:w-full">
-                     <div className="flex flex-col mt-8 max-lg:mt-10">
+                     <div className="flex flex-col max-lg:mt-7">
                         <div className="justify-center px-11 py-6 text-lg leading-7 text-center text-white capitalize border border-white border-solid bg-zinc-300 bg-opacity-0 rounded-[47px] max-lg:px-5">
                            Let's turn your ideas into the next big app success story.
                         </div>{" "}
